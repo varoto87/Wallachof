@@ -13,6 +13,8 @@
 		D90FB85A2292F2950000C029 /* Wallachof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D90FB8582292F2950000C029 /* Wallachof.xcdatamodeld */; };
 		D90FB85C2292F29F0000C029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90FB85B2292F29F0000C029 /* Assets.xcassets */; };
 		D90FB85F2292F29F0000C029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90FB85D2292F29F0000C029 /* LaunchScreen.storyboard */; };
+		D91D6A4E2293088300947268 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D6A4A229307B300947268 /* Product+CoreDataClass.swift */; };
+		D91D6A4F2293088A00947268 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D6A4B229307B300947268 /* Product+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D90FB85B2292F29F0000C029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D90FB85E2292F29F0000C029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D90FB8602292F29F0000C029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D91D6A4A229307B300947268 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D91D6A4B229307B300947268 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		D90FB8502292F2950000C029 /* Wallachof */ = {
 			isa = PBXGroup;
 			children = (
+				D91D6A49229307B300947268 /* CoreData */,
 				D90FB8512292F2950000C029 /* AppDelegate.swift */,
 				D90FB8532292F2950000C029 /* ViewController.swift */,
 				D90FB8552292F2950000C029 /* Main.storyboard */,
@@ -65,6 +70,15 @@
 				D90FB8582292F2950000C029 /* Wallachof.xcdatamodeld */,
 			);
 			path = Wallachof;
+			sourceTree = "<group>";
+		};
+		D91D6A49229307B300947268 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D91D6A4A229307B300947268 /* Product+CoreDataClass.swift */,
+				D91D6A4B229307B300947268 /* Product+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91D6A4F2293088A00947268 /* Product+CoreDataProperties.swift in Sources */,
 				D90FB8542292F2950000C029 /* ViewController.swift in Sources */,
 				D90FB8522292F2950000C029 /* AppDelegate.swift in Sources */,
 				D90FB85A2292F2950000C029 /* Wallachof.xcdatamodeld in Sources */,
+				D91D6A4E2293088300947268 /* Product+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
