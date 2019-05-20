@@ -18,18 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgF-82-uMr">
-                                <rect key="frame" x="170.5" y="433" width="73" height="30"/>
-                                <state key="normal" title="Crear Dino"/>
-                                <connections>
-                                    <action selector="btnTestPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51Y-xJ-jJc"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gmB-nM-XEF">
+                                <rect key="frame" x="157.5" y="408" width="99" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgF-82-uMr">
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
+                                        <state key="normal" title="Crear 🦖"/>
+                                        <connections>
+                                            <action selector="btnTestPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51Y-xJ-jJc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEN-zT-lIS">
+                                        <rect key="frame" x="0.0" y="50" width="99" height="30"/>
+                                        <state key="normal" title="Fetch Request"/>
+                                        <connections>
+                                            <action selector="btnFetchRequestPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbA-wL-bvm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.4941176471" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="MgF-82-uMr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QDl-Rf-ivA"/>
-                            <constraint firstItem="MgF-82-uMr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="grh-ag-nrI"/>
+                            <constraint firstItem="gmB-nM-XEF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ow-zw-SH8"/>
+                            <constraint firstItem="gmB-nM-XEF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KdJ-lM-CME"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

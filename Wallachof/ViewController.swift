@@ -7,25 +7,18 @@
 //
 
 import UIKit
-import CoreData
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        UserDefaults.standard.set("Hola", forKey: "Mundo")
     }
-
-
+    
+    
     @IBAction func btnTestPressed(_ sender: Any) {
         
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                return
-        }
-        
-        let persistentContainer = appDelegate.persistentContainer
+        let persistentContainer = CoreDataManager.shared.persistentContainer
         let context = persistentContainer.viewContext
         
         let dinoDetector = Product(context: context)
@@ -33,8 +26,13 @@ class ViewController: UIViewController {
         dinoDetector.desc = "Detector de dinosaurios de última generación"
         dinoDetector.price = 2000.0
         
-        appDelegate.saveContext()
-        
+        CoreDataManager.shared.saveContext()
+    }
+    
+    @IBAction func btnFetchRequestPressed(_ sender: Any) {
+        for producto in Product.all {
+            debugPrint("\(producto.name) a  \(producto.price) desc: \(producto.desc)")
+        }
     }
 }
 
