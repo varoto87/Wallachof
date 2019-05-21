@@ -16,6 +16,9 @@
 		D91D6A4E2293088300947268 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D6A4A229307B300947268 /* Product+CoreDataClass.swift */; };
 		D91D6A4F2293088A00947268 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D6A4B229307B300947268 /* Product+CoreDataProperties.swift */; };
 		D9F8F79F229329BC007B8FAE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F8F79E229329BC007B8FAE /* CoreDataManager.swift */; };
+		FA40411E2294122000B1AE3B /* ProductPicture+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40411C2294122000B1AE3B /* ProductPicture+CoreDataClass.swift */; };
+		FA40411F2294122000B1AE3B /* ProductPicture+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40411D2294122000B1AE3B /* ProductPicture+CoreDataProperties.swift */; };
+		FA6189A12294151100B00985 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6189A02294151100B00985 /* AddProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		D91D6A4A229307B300947268 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D91D6A4B229307B300947268 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D9F8F79E229329BC007B8FAE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FA40411C2294122000B1AE3B /* ProductPicture+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductPicture+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA40411D2294122000B1AE3B /* ProductPicture+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductPicture+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA6189A02294151100B00985 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +71,12 @@
 				D91D6A49229307B300947268 /* CoreData */,
 				D90FB8512292F2950000C029 /* AppDelegate.swift */,
 				D90FB8532292F2950000C029 /* ViewController.swift */,
+				FA6189A02294151100B00985 /* AddProductViewController.swift */,
+				D90FB8582292F2950000C029 /* Wallachof.xcdatamodeld */,
 				D90FB8552292F2950000C029 /* Main.storyboard */,
 				D90FB85B2292F29F0000C029 /* Assets.xcassets */,
 				D90FB85D2292F29F0000C029 /* LaunchScreen.storyboard */,
 				D90FB8602292F29F0000C029 /* Info.plist */,
-				D90FB8582292F2950000C029 /* Wallachof.xcdatamodeld */,
 			);
 			path = Wallachof;
 			sourceTree = "<group>";
@@ -77,6 +84,8 @@
 		D91D6A49229307B300947268 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FA40411C2294122000B1AE3B /* ProductPicture+CoreDataClass.swift */,
+				FA40411D2294122000B1AE3B /* ProductPicture+CoreDataProperties.swift */,
 				D91D6A4A229307B300947268 /* Product+CoreDataClass.swift */,
 				D91D6A4B229307B300947268 /* Product+CoreDataProperties.swift */,
 				D9F8F79E229329BC007B8FAE /* CoreDataManager.swift */,
@@ -155,12 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA40411E2294122000B1AE3B /* ProductPicture+CoreDataClass.swift in Sources */,
 				D9F8F79F229329BC007B8FAE /* CoreDataManager.swift in Sources */,
+				FA40411F2294122000B1AE3B /* ProductPicture+CoreDataProperties.swift in Sources */,
 				D91D6A4F2293088A00947268 /* Product+CoreDataProperties.swift in Sources */,
 				D90FB8542292F2950000C029 /* ViewController.swift in Sources */,
 				D90FB8522292F2950000C029 /* AppDelegate.swift in Sources */,
 				D90FB85A2292F2950000C029 /* Wallachof.xcdatamodeld in Sources */,
 				D91D6A4E2293088300947268 /* Product+CoreDataClass.swift in Sources */,
+				FA6189A12294151100B00985 /* AddProductViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +328,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CFTIC.Wallachof;
+				PRODUCT_BUNDLE_IDENTIFIER = es.appconcept.Wallachof;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,7 +346,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CFTIC.Wallachof;
+				PRODUCT_BUNDLE_IDENTIFIER = es.appconcept.Wallachof;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
