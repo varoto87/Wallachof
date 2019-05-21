@@ -15,6 +15,7 @@
 		D90FB85F2292F29F0000C029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90FB85D2292F29F0000C029 /* LaunchScreen.storyboard */; };
 		D91D6A4E2293088300947268 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D6A4A229307B300947268 /* Product+CoreDataClass.swift */; };
 		D91D6A4F2293088A00947268 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D6A4B229307B300947268 /* Product+CoreDataProperties.swift */; };
+		D9DB10A02294426C008FFB0F /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB109F2294426C008FFB0F /* AddProductViewController.swift */; };
 		D9F8F79F229329BC007B8FAE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F8F79E229329BC007B8FAE /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		D90FB8602292F29F0000C029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91D6A4A229307B300947268 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D91D6A4B229307B300947268 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D9DB109F2294426C008FFB0F /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 		D9F8F79E229329BC007B8FAE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				D90FB8512292F2950000C029 /* AppDelegate.swift */,
 				D90FB8532292F2950000C029 /* ViewController.swift */,
 				D90FB8552292F2950000C029 /* Main.storyboard */,
+				D9DB109F2294426C008FFB0F /* AddProductViewController.swift */,
 				D90FB85B2292F29F0000C029 /* Assets.xcassets */,
 				D90FB85D2292F29F0000C029 /* LaunchScreen.storyboard */,
 				D90FB8602292F29F0000C029 /* Info.plist */,
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9F8F79F229329BC007B8FAE /* CoreDataManager.swift in Sources */,
+				D9DB10A02294426C008FFB0F /* AddProductViewController.swift in Sources */,
 				D91D6A4F2293088A00947268 /* Product+CoreDataProperties.swift in Sources */,
 				D90FB8542292F2950000C029 /* ViewController.swift in Sources */,
 				D90FB8522292F2950000C029 /* AppDelegate.swift in Sources */,
